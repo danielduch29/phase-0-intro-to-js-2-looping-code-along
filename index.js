@@ -1,14 +1,17 @@
 // Code your solutions in this file
-function writeCards(){
-    let arr = writeCards(0);
-    let gift = writeCards(1);
+function writeCards(arr, eventName){
+    let result;
     for(let i = 0;i < arr.length;i++){
-        console.log("Thank you, ${arr[i]}, for the wonderful surprise gift!");
-        debugger;
+         result = (`Thank you, ${arr[i]}, for the wonderful ${eventName} gift!`)
+         debugger; 
     }
-    return arr;
+    return result
 }
 
-function countDown(){
-    console.log(countDown);
+function countDown(num){
+    let i = 0;
+    while(i <= num){
+       console.log(num--);
+    }
+    return num
 }
